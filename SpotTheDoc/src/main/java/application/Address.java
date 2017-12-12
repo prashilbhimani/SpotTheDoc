@@ -1,5 +1,6 @@
 package application;
 
+import javax.persistence.Column;
 import javax.persistence.Embeddable;
 import javax.persistence.Entity;
 
@@ -17,13 +18,13 @@ public class Address {
     	this.street=street;
     	this.city=city;
     	this.neighbourhoodLocation=neighbourhood;
+    	
     }
     private String neighbourhoodLocation;
     private String unit;
     private String street;
     private String city;
     private String state;
-    private int zip;
     /**
      * @return
      */
@@ -107,21 +108,6 @@ public class Address {
         // TODO implement here
     }
 
-    /**
-     * @return
-     */
-    public int getZip() {
-        // TODO implement here
-        return 0;
-    }
 
-    /**
-     * @param value 
-     * @return
-     */
-    public void setZip(int value) {
-        // TODO implement here
-
-    }
 
 }
